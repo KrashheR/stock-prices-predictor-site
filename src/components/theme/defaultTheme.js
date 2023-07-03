@@ -1,0 +1,31 @@
+export const defaultTheme = {
+  fontFamily: '"Inter", "Arial", sans-serif',
+  colors: {
+    primary: "#29344D",
+    bg: "#242C42",
+    text: "#FFFFFF",
+    textGray:"#C7CBD8",
+    priceUp: "#01dc25",
+    priceDown: "#EC1923",
+    selected: "#e4a247",
+    bgGradient: "linear-gradient(0deg, #1F2432, #32426D)",
+  },
+  fontSizes: {
+    small: "18px",
+    medium: "28px",
+    big: "38px",
+    laptopSmall: "16px",
+    laptopMedium: "24px",
+    laptopBig: "32px",
+    mobileSmall: "14px",
+    mobileMedium: "18px",
+    mobileBig: "28px",
+    titleLaptop: "24px",
+    titleMobile: "22px",
+  },
+  deviceSizes: {
+    mobile: "480px",
+    tablet: "780px",
+    laptop: "1240px",
+  },
+};
