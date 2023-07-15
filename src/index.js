@@ -12,7 +12,7 @@ function DataProvider() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch('https://krashher.github.io/stock-prices-predictor-site/get_data.php')
+    fetch('../../get_data.php')
       .then(response => response.json())
       .then(data => setData(data))
       .catch((error) => {
