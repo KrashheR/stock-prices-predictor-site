@@ -1,8 +1,8 @@
 {
-  "homepage": "https://github.com/KrashheR/stock-prices-predictor-site",
+  "homepage": "https://krashher.github.io/stock-prices-predictor-site/",
   "name": "stock-prices-predictor-site",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
