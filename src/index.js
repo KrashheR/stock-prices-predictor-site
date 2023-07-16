@@ -9,9 +9,6 @@ import { defaultTheme } from "./components/theme/defaultTheme";
 
 const root = createRoot(document.getElementById('root'));
 
-const currentPath = window.location.pathname;
-console.log(currentPath);
-
 function DataProvider() {
   const [data, setData] = useState(null);
 
