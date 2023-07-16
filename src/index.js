@@ -6,13 +6,17 @@ import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from "styled-components";
 import { defaultTheme } from "./components/theme/defaultTheme";
 
+
 const root = createRoot(document.getElementById('root'));
+
+const currentPath = window.location.pathname;
+console.log(currentPath);
 
 function DataProvider() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch('../../get_data.php')
+    fetch('https://krashher.ru/react-price-predictor/get_data.php')
       .then(response => response.json())
       .then(data => setData(data))
       .catch((error) => {
@@ -21,7 +25,7 @@ function DataProvider() {
   }, []);
 
   if (!data) {
-    return <div>Loading...</div>;
+    return <div>Загрузка данных...</div>;
   }
 
   return (

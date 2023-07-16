@@ -19,8 +19,9 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     $data = $result->fetch_all(MYSQLI_ASSOC);
-    header('Content-Type: application/json');
-    echo json_encode($data);
+    $json_data = json_encode($data);
+    file_put_contents('data.json', $json_data);
+    echo $json_data;
 } else {
     echo "0 результатов";
 }
