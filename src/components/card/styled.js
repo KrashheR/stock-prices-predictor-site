@@ -38,7 +38,7 @@ export const CurrencyData = styled.div`
     gap: 10px;
 `;
 
-export const Prices = styled.div`
+export const Prices = styled.span`
     display: flex;
     flex-direction: column;
 `;
