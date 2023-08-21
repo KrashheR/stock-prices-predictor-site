@@ -15,6 +15,7 @@ export const TableHeader = styled.div`
   padding: 30px;
 
   @media (max-width: ${ props => props.theme.deviceSizes.tablet }) {
+    padding: 30px 0;
     flex-direction: column;
     text-align: center;
     align-items: center;
