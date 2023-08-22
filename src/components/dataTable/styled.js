@@ -40,11 +40,11 @@ export const StyledHeaderTh = styled.th`
   padding: 20px;
   background-color: ${props => props.theme.colors.bg};
   font-size: ${props => props.theme.fontSizes.small};
-  color: ${props => (props.name === props.sortfield ? props.theme.colors.selected : props.theme.colors.text)};
+  color: ${props => (props.name === props.$sortfield ? props.theme.colors.selected : props.theme.colors.text)};
   user-select: none;
 
   &::after {
-    content: '${props => (props.name === props.sortfield ? (props.sortdirection === 'asc' ? '↑' : '↓') : ' ')}';
+    content: '${props => (props.name === props.$sortfield ? (props.$sortdirection === 'asc' ? '↑' : '↓') : ' ')}';
     position: absolute;
     right: 5px;
   }

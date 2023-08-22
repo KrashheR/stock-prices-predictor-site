@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import DataTable from "../dataTable/dataTable";
-import Search from "../search/search"; 
+import Search from "../../ui/search/search";
 import { StyledTable, TableHeader, TableTitle } from "./styled";
 
 
@@ -13,9 +13,9 @@ function Table ({ data }) {
                 <TableTitle>
                     Спрогнозированные цены активов
                 </TableTitle>
-                <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} /> 
+                <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
             </TableHeader>
-            <DataTable data={data} searchTerm={searchTerm}/> 
+            <DataTable data={data} searchTerm={searchTerm}/>
         </StyledTable>
 
     );

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { StyledThead, StyledTable, StyledTableWrapper, StyledHeaderTh, StyledTd, StyledTr } from "./styled";
-import { defaultTheme } from "../theme/defaultTheme";
+import { defaultTheme } from "../../theme/defaultTheme";
 
 function DataTable({ data, searchTerm }) {
   const [sortField, setSortField] = useState('currency');
@@ -39,12 +39,12 @@ function DataTable({ data, searchTerm }) {
       <StyledTable>
         <StyledThead>
           <tr>
-            <StyledHeaderTh sortfield={sortField} sortdirection={sortDirection} name ='currency' onClick={() => handleSort('currency')}>Название актива</StyledHeaderTh>
-            <StyledHeaderTh sortfield={sortField} sortdirection={sortDirection} name ='ticker' onClick={() => handleSort('ticker')}>Тикер</StyledHeaderTh>
-            <StyledHeaderTh sortfield={sortField} sortdirection={sortDirection} name ='lastPrice' onClick={() => handleSort('lastPrice')}>Текущая стоимость</StyledHeaderTh>
-            <StyledHeaderTh sortfield={sortField} sortdirection={sortDirection} name ='predictedPrice' onClick={() => handleSort('predictedPrice')}>Прогноз</StyledHeaderTh>
-            <StyledHeaderTh sortfield={sortField} sortdirection={sortDirection} name ='priceChange' onClick={() => handleSort('priceChange')}>Изменение цены</StyledHeaderTh>
-            <StyledHeaderTh sortfield={sortField} sortdirection={sortDirection} name ='modelAccuracy' onClick={() => handleSort('modelAccuracy')}>Точность модели</StyledHeaderTh>
+            <StyledHeaderTh $sortfield={sortField} $sortdirection={sortDirection} name ='currency' onClick={() => handleSort('currency')}>Название актива</StyledHeaderTh>
+            <StyledHeaderTh $sortfield={sortField} $sortdirection={sortDirection} name ='ticker' onClick={() => handleSort('ticker')}>Тикер</StyledHeaderTh>
+            <StyledHeaderTh $sortfield={sortField} $sortdirection={sortDirection} name ='lastPrice' onClick={() => handleSort('lastPrice')}>Текущая стоимость</StyledHeaderTh>
+            <StyledHeaderTh $sortfield={sortField} $sortdirection={sortDirection} name ='predictedPrice' onClick={() => handleSort('predictedPrice')}>Прогноз</StyledHeaderTh>
+            <StyledHeaderTh $sortfield={sortField} $sortdirection={sortDirection} name ='priceChange' onClick={() => handleSort('priceChange')}>Изменение цены</StyledHeaderTh>
+            <StyledHeaderTh $sortfield={sortField} $sortdirection={sortDirection} name ='modelAccuracy' onClick={() => handleSort('modelAccuracy')}>Точность модели</StyledHeaderTh>
           </tr>
         </StyledThead>
         <tbody>

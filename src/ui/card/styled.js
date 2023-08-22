@@ -6,6 +6,10 @@ const Paragraph = styled.p`
     padding: 0;
 `;
 
+export const StyledCardTitle = styled.span`
+
+`
+
 export const StyledCard = styled.div`
     display: flex;
     flex-direction: column;
@@ -17,6 +21,7 @@ export const StyledCard = styled.div`
     text-align: center;
     background-color: ${ props => props.theme.colors.bg };
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
 
     @media (max-width: ${ props => props.theme.deviceSizes.laptop }) {
         width: 28vw;

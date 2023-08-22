@@ -22,14 +22,13 @@ export const TitleColor = {
 }
 
 function Title({
-  level = 1, 
-  size, 
-  children, 
-  className,
+  level = 1,
+  size,
+  children,
   color
 }) {
   return (
-    <StyledTitle as={`h${level}`} $size={size} className={className} $color={color}>
+    <StyledTitle as={`h${level}`} $size={size} $color={color}>
       {children}
     </StyledTitle>
   );

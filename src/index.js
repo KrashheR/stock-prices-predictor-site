@@ -4,7 +4,7 @@ import './index.css';
 import App from './components/app/App';
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from "styled-components";
-import { defaultTheme } from "./components/theme/defaultTheme";
+import { defaultTheme } from "./theme/defaultTheme";
 
 
 const root = createRoot(document.getElementById('root'));

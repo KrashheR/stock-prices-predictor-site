@@ -1,15 +1,13 @@
-import { GlobalStyle } from "./styles";
+import { GlobalStyle } from "../../theme/globalStyles";
 import Inner from '../inner/inner';
-import CardList from "../cardList/cardList";
-import Table from '../table/table';
+import Main from "../main/main";
 
 function App({ data }) {
   return (
     <>
       <GlobalStyle />
       <Inner>
-        <CardList data={data}/>
-        <Table data={data} />
+        <Main data={ data }/>
       </Inner>
     </>
   );

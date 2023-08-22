@@ -1,6 +1,6 @@
 import React from "react";
 import { StyledCardList } from "./styled";
-import Card from '../card/card';
+import Card from '../../ui/card/card';
 
 function CardList({ data }) {
   const highestPriceChange = data.reduce((max, curr) => parseFloat(curr.priceChange) > parseFloat(max.priceChange) ? curr : max, data[0]);

@@ -1,21 +1,21 @@
 import React from "react";
-import { CurrencyData, ModelAccuracy, PredictedPrice, PriceChange, Prices, StyledCard} from "./styled";
+import { CurrencyData, ModelAccuracy, PredictedPrice, PriceChange, Prices, StyledCard, StyledCardTitle} from "./styled";
 import Title, {TitleLevel, TitleSize, TitleColor} from "../title/title";
 
 
 function Card({
     titleName,
-    ticker, 
-    predictedPrice, 
-    priceChange, 
+    ticker,
+    predictedPrice,
+    priceChange,
     modelAccuracy,
-    currencySymbol 
+    currencySymbol
   }) {
     return (
       <StyledCard $priceChange={priceChange}>
-        <Title level={TitleLevel.H3} size={TitleSize.SMALL} color={TitleColor.GRAY}>
-          {titleName}
-        </Title>
+        <StyledCardTitle>
+        <Title level={TitleLevel.H3} size={TitleSize.SMALL} color={TitleColor.WHITE}>{ titleName }</Title>
+        </StyledCardTitle>
         <CurrencyData>
             <Title level={TitleLevel.H2} size={TitleSize.BIG} color={TitleColor.WHITE}>
               {ticker}
@@ -24,9 +24,9 @@ function Card({
               <PredictedPrice>
                 {predictedPrice}{currencySymbol}
               </PredictedPrice>
-                <PriceChange $priceChange={priceChange}>
-                  {priceChange > 0 ? `+${priceChange}`: priceChange}{currencySymbol}
-                </PriceChange>
+              <PriceChange $priceChange={priceChange}>
+                {priceChange > 0 ? `+${priceChange}`: priceChange}{currencySymbol}
+              </PriceChange>
             </Prices>
         </CurrencyData>
         <ModelAccuracy>
@@ -35,5 +35,5 @@ function Card({
       </StyledCard>
     );
   }
-  
+
   export default Card;
