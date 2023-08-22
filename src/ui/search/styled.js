@@ -10,6 +10,7 @@ export const StyledInput = styled.input`
   font-size: ${props => props.theme.fontSizes.small};
   background-color: ${props => props.theme.colors.bg};
   color: ${props => props.theme.colors.text};
+  font-weight: 400;
   transition: all 0.3s ease;
 
   &:focus{

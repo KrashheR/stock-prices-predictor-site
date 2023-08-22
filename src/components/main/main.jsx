@@ -5,7 +5,7 @@ import React from "react";
 function Main({ data }) {
   return (
     <>
-      <CardList data={data}/>
+      <CardList data={data} />
       <Table data={data} />
     </>
   );
