@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
-import App from './components/app/App';
+import App from './components/layouts/app/App';
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from "styled-components";
-import { defaultTheme } from "./theme/defaultTheme";
+import { defaultTheme } from "./assets/theme/defaultTheme";
+import { GlobalStyle } from "./assets/theme/globalStyles";
 
 
 const root = createRoot(document.getElementById('root'));
@@ -27,6 +28,7 @@ function DataProvider() {
 
   return (
     <ThemeProvider theme={defaultTheme}>
+      <GlobalStyle />
       <App data={data} />
     </ThemeProvider>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import { CurrencyData, ModelAccuracy, PredictedPrice, PriceChange, Prices, StyledCard, StyledCardTitle} from "./styled";
-import Title, {TitleLevel, TitleSize, TitleColor} from "../title/title";
+import Title, {TitleLevel, TitleSize, TitleColor} from "../../ui/title/title";
 
 
 function Card({

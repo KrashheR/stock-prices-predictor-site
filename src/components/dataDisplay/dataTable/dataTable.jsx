@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { StyledThead, StyledTable, StyledTableWrapper, StyledHeaderTh, StyledTd, StyledTr } from "./styled";
-import { defaultTheme } from "../../theme/defaultTheme";
+import { defaultTheme } from "../../../assets/theme/defaultTheme";
 
 function DataTable({ data, searchTerm }) {
   const [sortField, setSortField] = useState('currency');

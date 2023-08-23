@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import DataTable from "../dataTable/dataTable";
+import DataTable from "../../dataDisplay/dataTable/dataTable";
 import Search from "../../ui/search/search";
 import { StyledTable, TableHeader, TableTitle } from "./styled";
 
 
-function Table ({ data }) {
+function TableContainer ({ data }) {
     const [searchTerm, setSearchTerm] = useState('');
 
     return(
@@ -21,4 +21,4 @@ function Table ({ data }) {
     );
 }
 
-export default Table;
+export default TableContainer;

@@ -16,14 +16,15 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    position: relative;
-    min-height: 100%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
     font-size: ${(props) => props.theme.fontSizeDefault};
     font-weight: 400;
     color: ${(props) => props.theme.colorBlackForText};
-    background-size: contain;
     background-color: ${props => props.theme.colors.bg};
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   @font-face {
