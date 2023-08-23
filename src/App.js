@@ -1,5 +1,5 @@
-import Inner from '../../containers/inner/inner';
-import Main from '../main/main';
+import Inner from './components/containers/inner/inner';
+import Main from './components/layouts/main/main';
 
 function App({ data }) {
   return (
