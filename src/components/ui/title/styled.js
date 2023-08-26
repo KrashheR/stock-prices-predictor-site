@@ -24,7 +24,7 @@ export const StyledTitle = styled.h1`
     return textColor;
   }};
 
-  @media (max-width: ${ props => props.theme.deviceSizes.laptop }) {
+  @media (max-width: ${(props) => props.theme.deviceSizes.laptop}) {
     font-size: ${(props) => {
       let fontSize = props.theme.fontSizes.laptopMedium;
       if (props.$size === TitleSize.BIG) {

@@ -8,9 +8,14 @@ function Search({ searchTerm, setSearchTerm }) {
 
   return (
     <label htmlFor="search">
-      <StyledInput id="search" type="text" placeholder="Поиск..." value={searchTerm} onChange={handleSearchChange} />
+      <StyledInput
+        id="search"
+        type="text"
+        placeholder="Поиск..."
+        value={searchTerm}
+        onChange={handleSearchChange}
+      />
     </label>
-
   );
 }
 

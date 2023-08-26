@@ -3,7 +3,7 @@ export const defaultTheme = {
     primary: "#29344D",
     bg: "#242C42",
     text: "#FFFFFF",
-    textGray:"#C7CBD8",
+    textGray: "#C7CBD8",
     priceUp: "#01dc25",
     priceDown: "#FF2300",
     selected: "#e4a247",

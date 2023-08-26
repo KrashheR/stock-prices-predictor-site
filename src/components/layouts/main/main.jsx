@@ -1,11 +1,11 @@
-import CardList from "../../containers/cardList/cardList";
+import CardContainer from "../../containers/cardContainer/cardContainer";
 import TableContainer from "../../containers/tableContainer/table";
 import React from "react";
 
 function Main({ data }) {
   return (
     <>
-      <CardList data={data} />
+      <CardContainer data={data} />
       <TableContainer data={data} />
     </>
   );
