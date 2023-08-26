@@ -13,6 +13,7 @@ export const GlobalStyle = createGlobalStyle`
   html {
     padding: 0;
     margin: 0;
+    scrollbar-gutter: stable;
   }
 
   html {
@@ -29,7 +30,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: ${(props) => props.theme.fontSizeDefault};
     font-weight: 400;
     color: ${(props) => props.theme.colorBlackForText};
-    background-color: ${props => props.theme.colors.bg};
+    background-color: ${(props) => props.theme.colors.bg};
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
